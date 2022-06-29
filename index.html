@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Organizer</title>
+</head>
+<body>
+    <script>
+        let animals = [
+            {ID: 'LI01', Name: 'Lion', Age: 3},
+            {ID: 'CR02', Name: 'Crocodile', Age: 1},
+            {ID: 'DO03', Name: 'Dolphin', Age:5},
+            {ID: 'HI01', Name: 'Hippo', Age: 2},
+            {ID: 'EL05', Name: 'Elephant', Age:4},
+        ];
+        const animalName = [];
+        animals.forEach(animal=>{
+            animalName.push({
+                
+                Name: animal.Name
+            })
+        })
+        console.log (animalName)
+        
+        let newAnimal = {
+            ID: 'TI02',
+            Name: 'Tiger',
+            Age: 2
+        }
+        animals.push(newAnimal);
+        console.log(animals);
+        console.log(animals.includes('Tiger'))
+    </script>
+</body>
+</html>
